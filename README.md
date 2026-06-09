@@ -1,4 +1,4 @@
-# PS3 Jailbreak v1.3
+# PS3 Jailbreak v1.4
 
 Clean self-hosted PS3HEN 3.5.0 website for firmware 4.91, 4.92 and 4.93.
 
@@ -15,3 +15,11 @@ Clean self-hosted PS3HEN 3.5.0 website for firmware 4.91, 4.92 and 4.93.
 ## Public URL
 
 `https://reprook.github.io/ps3-jailbreak/`
+
+## Version 1.4
+
+- Firmware 4.92 now uses `installer/492alt.html` as the primary installer.
+- Firmware 4.93 now uses `installer/493alt.html` as the primary installer.
+- Firmware 4.91 keeps `installer/alternate.html`.
+- The generic installer remains available as a fallback on 4.92 and 4.93.
+- Added a clean browser retry checklist.

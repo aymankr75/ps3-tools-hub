@@ -10,6 +10,16 @@ function isPS3(){
   return (navigator.userAgent||"").indexOf("PLAYSTATION 3")!=-1;
 }
 
+function installerPathFor(version){
+  if(version=="4.92"){return "../installer/492alt.html";}
+  if(version=="4.93"){return "../installer/493alt.html";}
+  return "../installer/alternate.html";
+}
+
+function genericInstallerPath(){
+  return "../installer/alternate.html";
+}
+
 function initFirmwarePage(expectedVersion){
   var detected=getDetectedFirmware();
   var box=flashById("firmwareDetection");
@@ -33,10 +43,18 @@ function initFirmwarePage(expectedVersion){
   if(detected==expectedVersion){
     box.className="firmware-detection detect-good";
     title.innerHTML="Correct firmware detected: "+detected;
-    text.innerHTML="Install matching HFW "+expectedVersion+" from USB first. Then launch the local PS3HEN 3.5.0 installer.";
+    text.innerHTML="Use matching HFW "+expectedVersion+" from USB, then start the firmware-specific PS3HEN 3.5.0 installer.";
+
     installer.className="launch-main";
-    installer.href="../installer/alternate.html";
-    if(fallback){fallback.style.display="inline-block";}
+    installer.href=installerPathFor(expectedVersion);
+
+    if(fallback && (expectedVersion=="4.92" || expectedVersion=="4.93")){
+      fallback.href=genericInstallerPath();
+      fallback.innerHTML="TRY GENERIC INSTALLER";
+      fallback.style.display="inline-block";
+    }else if(fallback){
+      fallback.style.display="none";
+    }
     return;
   }
 
