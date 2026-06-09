@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-
   var select = document.getElementById("firmwareSelect");
   var button = document.getElementById("checkButton");
   var result = document.getElementById("compatibilityResult");
@@ -17,19 +16,17 @@
 
   button.addEventListener("click", function () {
     var version = select.value;
-
     if (!version) {
       setResult("!", "Choose your firmware version first", false);
       select.focus();
       return;
     }
-
     if (version === "4.92") {
-      setResult("✓", "4.92 guide section is ready to build", true);
+      setResult("✓", "4.92 information page is available", true);
     } else if (version === "4.91" || version === "4.90") {
-      setResult("✓", "Supported guide path can be added", true);
+      setResult("✓", "Legacy information path is available", true);
     } else {
-      setResult("i", "Check the matching legacy guide before continuing", false);
+      setResult("i", "Use the legacy firmware information section", false);
     }
   });
 

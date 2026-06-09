@@ -1,18 +1,44 @@
-# PS3 Tools Hub
+# PS3 Tools Hub v3
 
-Starter static website prepared for GitHub Pages.
+Dual-interface GitHub Pages website:
 
-## Upload
+- `index.html`: modern desktop/mobile interface.
+- `ps3.html`: lightweight PlayStation 3 browser interface.
+- `ps3/browser-test.html`: console browser diagnostics.
+- `ps3/*.html`: lightweight tool and guide pages.
 
-1. Extract the ZIP on your computer.
-2. In your GitHub repository, choose **Add file → Upload files**.
-3. Upload `index.html`, the `assets` folder and this README file.
-4. Commit the changes.
-5. Open **Settings → Pages**.
-6. Choose **Deploy from a branch**, then `main` and `/ (root)`.
+## Update the repository
 
-## Notes
+1. Extract the ZIP.
+2. Open the GitHub repository.
+3. Choose **Add file → Upload files**.
+4. Upload every extracted file and folder.
+5. Enable **Replace existing files** when GitHub asks, then commit.
 
-- This starter contains no installer payloads or copyrighted game files.
-- Replace placeholder links only with trusted, legal and properly licensed resources.
-- Keep version information and file checksums updated.
+The repository root should contain:
+
+```text
+.nojekyll
+404.html
+index.html
+ps3.html
+README.md
+assets/
+ps3/
+```
+
+## Safety and source rules
+
+- This starter does not bundle installer payloads, firmware files or copyrighted games.
+- Add only trusted and properly licensed project files.
+- Show the project source, version, file size and checksum beside each download.
+
+
+## Version 3 installer layout
+
+- `ps3/hen-492.html`: warning, compatibility checklist and launch button.
+- `HEN/492/index.html`: minimal installer landing page.
+- `HEN/492/hen492.html`: supplied installer source, kept separate from the interface.
+- `INSTALLER-SOURCE-NOTES.md`: source findings and SHA-256 values.
+
+Upload all extracted files and folders to the repository root.
