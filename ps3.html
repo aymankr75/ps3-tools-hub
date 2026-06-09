@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/ps3.css">
   <script type="text/javascript" src="assets/js/ps3.js"></script>
 </head>
-<body>
+<body onload="initJailbreakHome();">
   <div class="wrap">
     <div class="topbar">
       <div class="logo">
@@ -30,8 +30,7 @@
         <span class="tag">ONE LINK · CLEAN WORKFLOW</span>
         <h1>Choose firmware.<br><span>Launch the right HEN path.</span></h1>
         <p>
-          This page is prepared for PlayStation 3 service work. Select the exact
-          firmware shown in System Information and confirm HFW before launching HEN.
+          This page is prepared for PlayStation 3 service work. The PS3 browser detects the firmware number automatically. Install matching HFW by USB, confirm it, then launch PS3HEN 3.5.0.
         </p>
         <a class="big-button" href="#firmwares">SELECT FIRMWARE</a>
         <a class="big-button dark-button" href="ps3/browser-test.html">RUN BROWSER TEST</a>
@@ -49,6 +48,21 @@
       <div class="clear"></div>
     </div>
 
+    <div class="section">
+      <div id="autoDetectPanel" class="auto-detect-panel detect-neutral">
+        <div class="detect-icon">AUTO</div>
+        <div class="detect-copy">
+          <h2 id="autoDetectTitle">Checking this console...</h2>
+          <p id="autoDetectText">Reading the PS3 browser identity.</p>
+        </div>
+        <a id="autoDetectAction" class="detect-action" href="#" style="display:none">OPEN CENTER</a>
+        <div class="clear"></div>
+      </div>
+      <div class="detect-note">
+        Automatic detection reads the firmware number only. OFW and HFW still need manual confirmation.
+      </div>
+    </div>
+
     <div class="section" id="firmwares">
       <div class="version-heading">
         <div>
@@ -62,7 +76,7 @@
 
       <table class="version-grid">
         <tr>
-          <td class="version-card latest-card">
+          <td id="fwCard493" class="version-card latest-card">
             <div class="version-top">
               <span class="version-number">4.93</span>
               <span class="version-state latest-state">LATEST</span>
@@ -73,23 +87,23 @@
             <a class="version-button" href="firmware/4.93.html">OPEN 4.93 CENTER &gt;</a>
           </td>
 
-          <td class="version-card">
+          <td id="fwCard492" class="version-card">
             <div class="version-top">
               <span class="version-number">4.92</span>
               <span class="version-state supported-state">SUPPORTED</span>
             </div>
-            <h3>PS3HEN Supported</h3>
+            <h3>PS3HEN 3.5.0</h3>
             <p>Matching HFW 4.92 is required. Includes a local legacy installer fallback.</p>
             <div class="requirement">REQUIRES: HFW 4.92</div>
             <a class="version-button" href="firmware/4.92.html">OPEN 4.92 CENTER &gt;</a>
           </td>
 
-          <td class="version-card">
+          <td id="fwCard491" class="version-card">
             <div class="version-top">
               <span class="version-number">4.91</span>
               <span class="version-state supported-state">SUPPORTED</span>
             </div>
-            <h3>PS3HEN Supported</h3>
+            <h3>PS3HEN 3.5.0</h3>
             <p>Matching HFW 4.91 is required before launching the maintained installer.</p>
             <div class="requirement">REQUIRES: HFW 4.91</div>
             <a class="version-button" href="firmware/4.91.html">OPEN 4.91 CENTER &gt;</a>
@@ -102,10 +116,10 @@
       <h2 class="section-title">Shop workflow</h2>
       <table class="workflow-table">
         <tr>
-          <td><span class="step-number">1</span><b>Check version</b><br><small>Read the exact firmware in System Information.</small></td>
-          <td><span class="step-number">2</span><b>Confirm HFW</b><br><small>Do not launch HEN from matching OFW.</small></td>
+          <td><span class="step-number">1</span><b>Auto detect</b><br><small>The browser reads 4.91, 4.92 or 4.93 automatically.</small></td>
+          <td><span class="step-number">2</span><b>Install HFW by USB</b><br><small>Use a FAT32 USB and matching PS3UPDAT.PUP.</small></td>
           <td><span class="step-number">3</span><b>Browser test</b><br><small>Verify JavaScript and console detection.</small></td>
-          <td><span class="step-number">4</span><b>Launch HEN</b><br><small>Open only the matching firmware center.</small></td>
+          <td><span class="step-number">4</span><b>Install HEN 3.5.0</b><br><small>Open only the matching firmware center.</small></td>
         </tr>
       </table>
     </div>

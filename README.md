@@ -1,4 +1,4 @@
-# PS3 Jailbreak v1
+# PS3 Jailbreak v1.1
 
 A clean dual-interface PS3HEN website for firmware 4.91, 4.92 and 4.93.
 
@@ -25,3 +25,12 @@ Do not upload the ZIP itself.
 ## Important
 
 Each firmware page requires the user to confirm the matching HFW before the maintained PS3HEN installer button is unlocked.
+
+
+## Version 1.1
+
+- Detects PS3 firmware 4.91, 4.92 or 4.93 automatically from the browser identity.
+- Does not claim to detect OFW versus HFW; that still requires manual confirmation.
+- Shows the exact FAT32 USB path for matching HFW installation.
+- Primary maintained installer is labeled PS3HEN 3.5.0.
+- Local 4.92 fallback is clearly labeled as legacy HEN 3.3.0 FIX.

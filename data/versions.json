@@ -25,5 +25,9 @@
   ],
   "project": "PS3 Jailbreak",
   "repository": "reprook/ps3-jailbreak",
-  "public_url": "https://reprook.github.io/ps3-jailbreak/"
+  "public_url": "https://reprook.github.io/ps3-jailbreak/",
+  "site_version": "1.1",
+  "hen_version": "3.5.0",
+  "firmware_detection": "navigator.userAgent",
+  "hfw_detection": "manual confirmation required"
 }
