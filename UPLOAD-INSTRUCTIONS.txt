@@ -1,0 +1,42 @@
+PS3 JAILBREAK - CLEAN INSTALL
+
+GITHUB ACCOUNT:
+reprook
+
+REPOSITORY NAME:
+ps3-jailbreak
+
+PUBLIC LINK:
+https://reprook.github.io/ps3-jailbreak/
+
+STEPS:
+
+1. Rename the repository to: ps3-jailbreak
+2. Delete the old repository files.
+3. Extract this ZIP on your computer.
+4. Open the extracted folder.
+5. Upload EVERYTHING INSIDE the extracted folder to the repository root.
+6. Do NOT upload this ZIP file.
+7. Commit the upload.
+8. Keep GitHub Pages configured as:
+   Branch: main
+   Folder: / (root)
+
+THE REPOSITORY ROOT MUST CONTAIN:
+
+index.html
+ps3.html
+404.html
+.nojekyll
+README.md
+SOURCE-CREDITS.md
+UPDATE-GUIDE.md
+UPLOAD-INSTRUCTIONS.txt
+assets/
+data/
+firmware/
+ps3/
+HEN/
+
+MAIN PS3 LINK:
+https://reprook.github.io/ps3-jailbreak/ps3.html
