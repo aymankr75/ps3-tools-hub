@@ -1,19 +1,13 @@
-# PS3 Jailbreak v1.7
+# PS3 Jailbreak v1.8
 
-Small UI update for the PS3 page.
+Small visual update.
 
 ## Changes
 
-- Removed the "Clean shop workflow" section from `ps3.html`.
-- Added direct PKG download cards for:
-  - webMAN
-  - multiMAN
-- Added uploaded package files:
-  - `pkgs/webMAN.pkg`
-  - `pkgs/multiMAN.pkg`
-- Added uploaded webMAN logo:
-  - `assets/img/webman-logo.webp`
+- Added uploaded multiMAN logo.
+- Replaced the `MM` placeholder with the real image.
+- webMAN and multiMAN cards now both use image logos.
 
-## Public PS3 page
+## Added file
 
-`https://reprook.github.io/ps3-jailbreak/ps3.html`
+- `assets/img/multiman-logo.webp`
