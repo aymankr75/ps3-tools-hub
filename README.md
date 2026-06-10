@@ -1,19 +1,19 @@
-# PS3 Jailbreak v1.6
+# PS3 Jailbreak v1.7
 
-Test build using the official PS3Xploit Standard Installer.
+Small UI update for the PS3 page.
 
-## Routing
+## Changes
 
-- Firmware 4.91 → official PS3Xploit Standard Installer
-- Firmware 4.92 → official PS3Xploit Standard Installer
-- Firmware 4.93 → official PS3Xploit Standard Installer
+- Removed the "Clean shop workflow" section from `ps3.html`.
+- Added direct PKG download cards for:
+  - webMAN
+  - multiMAN
+- Added uploaded package files:
+  - `pkgs/webMAN.pkg`
+  - `pkgs/multiMAN.pkg`
+- Added uploaded webMAN logo:
+  - `assets/img/webman-logo.webp`
 
-The firmware pages still detect the PS3 version automatically.
+## Public PS3 page
 
-## Important
-
-The installer is opened from:
-
-`http://ps3xploit.me/hen/installer/index.html`
-
-This build does not use the alternate installer.
+`https://reprook.github.io/ps3-jailbreak/ps3.html`
